@@ -36,7 +36,7 @@ datasource.password=test_pass
 We can use a different property (not only for the database, but for everything else as well) using Spring annotation from spring-test dependency.
 The test class should have 3 annotations:
 
-@RunWith (SpringJUnit4ClassRunner.class) - Indicates that the class should use Spring's JUnit facilities
+@RunWith(SpringJUnit4ClassRunner.class) - Indicates that the class should use Spring's JUnit facilities
 
 @ContextConfiguration (Application.class): Indicates ApplicationContext.
 
@@ -69,16 +69,16 @@ The test property sources have a higher priority than those from the system envi
 So, the entire test looked more less like this:
 
 {% highlight java %}
-@RunWith(
+@@RunWith(SpringJUnit4ClassRunner.class)
 @TestPropertySource("classpath:database-test.properties")
 @ContextConfiguration(classes = Application.class)
-public class SponsorIntegrationTest {
+public class SomethingIntegrationTest {
 
     @Autowired
     private SomeRepo repo;
 
     @Test
-    public void should_return_proper_sponsor_
+    public void should_return_proper_something() {
         List<SomeModel> allSomethings = repo.getAllSomethings();
         assertThat("Somethings list should return 7 records", allSomethings.size(), is(7));
     }
