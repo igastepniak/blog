@@ -95,7 +95,7 @@ I added this dependency to pom.xml file:
  </dependency>
 {% endhighlight %}
 
-Here you can find example code: <a href="https://github.com/igastepniak/springIntegration"> Iga Stępniak </a>
+Here you can find example code: <a href="https://github.com/igastepniak/springIntegration"> Springboot app example with simple integration test </a>
 
 
 
