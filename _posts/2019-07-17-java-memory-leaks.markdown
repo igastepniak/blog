@@ -11,7 +11,7 @@ As a result, more and more resources are consumed, significantly slowing down yo
 Sometimes the error will not be thrown, and the only signal indicating memory leaks will be a significant and progressive slowdown of applications related to  GC load.
 In that cases leaks are hard to find – either during debug or while using heap profilers.
 
-![memory-leak](memory_leak.jpg){:class="img-responsive"}
+![memory-leak](memory_leak.jpg)
 
 
 While reading  Effective Java (Third Edition), I have accumulated some good practices that will avoid memory leaks in the most common situations:
